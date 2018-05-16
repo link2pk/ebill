@@ -26,6 +26,7 @@ gulp.task('sass', function () {
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
+        port: 5000,
         server: "./"  
     });
 

@@ -56,9 +56,14 @@ img {
   .grid-hero {
     grid-template-columns: 1fr 1fr; }
   .img-div {
-    order: 1; } }
+    order: 1; }
+  .faq {
+    align-items: start;
+    grid-row-gap: 1em; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  body {
+    text-align: center; }
   .grid-hero img {
     margin: 0 auto; } }
 

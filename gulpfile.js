@@ -3,14 +3,7 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
-// Compile sass into CSS & auto-inject into browsers
-//node_modules/bootstrap/scss/bootstrap.scss
-/* gulp.task('sass', function() {
-    return gulp.src("assets/scss/app.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("assets/css"))
-        .pipe(browserSync.stream());
-}); */
+
 
 
 gulp.task('sass', function () {

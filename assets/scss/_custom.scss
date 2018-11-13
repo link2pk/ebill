@@ -1,7 +1,62 @@
-body{
-   // background-color: $primary;
+.grid-hero {
+    padding-top: 4.5rem;
 }
 
-p{
-    //color: var(--bonta);
+.main-nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(#000, .1);
+    width: 100%;
+}
+
+.container {
+    max-width: 96vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:$nav-breakpoint) {
+    .grid {
+        display: grid;
+        grid-column-gap: 1em;
+        align-items: center;
+    }
+    .grid-hero {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .img-div {
+        order: 1;
+    }
+}
+
+@media (max-width:$nav-breakpoint) {
+    .grid-hero {
+        img {
+            margin: 0 auto;
+        }
+    }
 }

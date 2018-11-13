@@ -1,3 +1,7 @@
+
+//custom-reset
+@import "custom-reset";
+
 //your custom fonts here
 @import "fonts";
 
@@ -5,7 +9,7 @@
 @import "variables";
 
 //Include parts of Bootstrap
-@import "bootstrap-includes";
+//@import "bootstrap-includes";
 
 //app styles here
 @import "custom";

@@ -167,19 +167,22 @@ img {
   transform: rotate(-45deg); }
 
 .luxbar-menu-light, .luxbar-menu-light .dropdown ul {
-  background-color: #e0e0e0;
-  color: #212121; }
+  background-color: transparent;
+  color: #fff; }
 
 .luxbar-menu-light .active {
-  background-color: #bdbdbd; }
+  background-color: transparent; }
+
+.luxbar-menu-light .luxbar-item:not(.active) {
+  color: rgba(255, 255, 255, 0.65); }
 
 .luxbar-menu-light .luxbar-item:hover {
-  background-color: #bdbdbd; }
+  background-color: transparent; }
 
 .luxbar-menu-light .luxbar-hamburger span {
-  background-color: #212121; }
+  background-color: #fff; }
   .luxbar-menu-light .luxbar-hamburger span::before, .luxbar-menu-light .luxbar-hamburger span::after {
-    background-color: #212121; }
+    background-color: #fff; }
 
 .text-center {
   text-align: center; }
@@ -191,11 +194,15 @@ img {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(255, 255, 255, 0.14); }
 
 .container {
   max-width: 96vw;
   margin: 0 auto; }
+
+.hero {
+  background: url(../img/hero-bg.svg) center top no-repeat;
+  background-size: cover; }
 
 @media (min-width: 576px) {
   .container {
@@ -221,7 +228,8 @@ img {
   .grid-hero {
     grid-template-columns: 1fr 1fr; }
   .img-div {
-    order: 1; }
+    order: 1;
+    text-align: center; }
   .faq {
     align-items: start;
     grid-row-gap: 1em; } }
@@ -230,6 +238,10 @@ img {
   body {
     text-align: center; }
   .grid-hero img {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .luxbar-menu-light {
+    background-image: linear-gradient(96deg, #0059ff, #08b1fa); }
+  .main-nav .container {
+    max-width: initial; } }
 
 /*# sourceMappingURL=app.css.map */

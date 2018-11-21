@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: local('Avenir LT Std 95 Black'), local('AvenirLTStd-Black'),
+        url('../fonts/AvenirLTStd-Black.woff2') format('woff2'),
+        url('../fonts/AvenirLTStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: local('Avenir LT Std 35 Light'), local('AvenirLTStd-Light'),
+        url('../fonts/AvenirLTStd-Light.woff2') format('woff2'),
+        url('../fonts/AvenirLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: local('Avenir LT Std 45 Book'), local('AvenirLTStd-Book'),
+        url('../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+        url('../fonts/AvenirLTStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: local('Avenir LT Std 85 Heavy'), local('AvenirLTStd-Heavy'),
+        url('../fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+        url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+$black-font-weight: 900;
+$heavy-font-weight: 800;
+$light-font-weight: 300;
+$book-font-weight: 400;

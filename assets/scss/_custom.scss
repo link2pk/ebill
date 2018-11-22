@@ -1,12 +1,12 @@
-body{
+body {
     font-family: $font-family-avenir;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.margin-lr-auto{
+.margin-lr-auto {
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,52 +21,110 @@ body{
     top: 0;
     width: 100%;
     background-color: rgba(#fff, .14);
-    
 }
 
 .container {
     max-width: 96vw;
     margin: 0 auto;
 }
-.hero{
+
+.hero {
     background: url(../img/hero-bg.svg) center top no-repeat;
     background-size: cover;
-    h1{
+    h1 {
         font-size: 1.8rem;
         font-weight: $black-font-weight;
         margin-bottom: .8rem;
     }
-    p{
+    p {
         font-size: .9rem;
         margin-bottom: 3rem;
-        
-        
     }
-    
 }
-.hero-img{
+
+.download-ebill {
+    background-image: url(../img/download-ebill-bg.svg);
+}
+
+.hero-img {
     padding-top: 3rem;
 }
 
-.faq{
-    color: #a1aeb7;
+.ebill-img {
+    max-width: 200px;
+    margin-bottom: 2rem;
 }
 
-.download-from{
-    img{
+.faq {
+    padding: 5rem 0;
+    .grid{
+        color: #a1aeb7;
+    }
+    h4,h6{
+        background-image: linear-gradient(96deg, #0059ff, #08b1fa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h4{
+        font-size: 2.26rem;
+        margin-bottom: 3rem;
+    }
+    h6{
+        margin-bottom: 1rem;
+    }
+    h6,p{
+        font-size: .864rem;
+    }
+    p{
+        line-height: 1.29rem;
+        font-weight: $light-font-weight;
+    }
+}
+
+.download-from {
+    a{
+        display: inline-block;
+    }
+    img {
         width: 140px;
     }
 }
+
+
+
 .steps {
-    color: #393939; 
-    img{
+    padding: 5rem 0;
+    b {
+        font-size: 3rem;
+        font-weight: $black-font-weight;
+        background-image: linear-gradient(139deg, #0059ff, #08b1fa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    img {
         max-width: 260px;
     }
+    h4{
+        font-weight: $heavy-font-weight;
+        font-size: 1.76rem;
+        margin-bottom: .5rem;
+    }
+    p{
+        font-size: .96rem;
+        
+        color: rgba(#393939, .5);
+    }
+}
+
+
+footer{
+    background-image: linear-gradient(96deg, #0059ff, #08b1fa);
 }
 
 
 //media queries
-
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -80,24 +138,95 @@ body{
     .hero h1 {
         font-size: 2.52rem;
     }
+    .download-ebill {
+        .grid-hero {
+            padding-bottom: 2rem;
+        }
+    }
+    .steps{
+        b{
+            font-size: 4rem;
+        }
+    }
+}
+@media (min-width:$nav-breakpoint) {
+    .grid {
+        display: grid;
+        grid-column-gap: 1em;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        .img-div {
+            text-align: right;
+        }
+    }
+    .img-div {
+        order: 1;
+    }
+    .faq {
+        .grid{
+            align-items: start;
+            grid-row-gap: 1em;
+        }
+    }
+    .steps {
+        padding-top: 8rem;
+        .grid>div {
+            &:nth-child(1) {
+                order: 1;
+                text-align: right;
+            }
+            &:nth-child(2) {
+                order: 0;
+            }
+            &:nth-child(3) {
+                order: 2;
+            }
+            &:nth-child(4) {
+                order: 3;
+                margin-left: auto;
+            }
+            &:nth-child(5) {
+                order: 5;
+                text-align: right;
+            }
+            &:nth-child(6) {
+                order: 4;
+            }
+        }
+        h4,p{
+            max-width: 300px;
+        }
+
+    }
 }
 
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
-    .hero-img {
-            width: 32vw;
-            padding-top: 4rem;
+    .container2 {
+        max-width: 770px;
     }
-    .hero{
-        p{
+    .faq{
+        max-width: 840px;
+        .grid{
+            
+            grid-gap: 2em;
+        }
+    }
+
+    .hero-img {
+        width: 32vw;
+        padding-top: 4rem;
+    }
+    .hero {
+        p {
             max-width: 384px;
             margin-bottom: 4.5rem;
         }
     }
-    .download-from{
-        img{
+    .download-from {
+        img {
             width: 11rem;
         }
     }
@@ -105,79 +234,84 @@ body{
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1100px;
     }
-}
-
-@media (min-width:$nav-breakpoint) {
-    .grid {
-        display: grid;
-        grid-column-gap: 1em;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        .img-div{
-            text-align: right;
-        }
-    }
-    
-    .img-div {
-        order: 1;
-        
+    .container2 {
+        max-width: 770px;
     }
     .faq{
-        align-items: start;
-        grid-row-gap: 1em;
+        max-width: 900px;
+        padding: 9rem 0;
+        h4{
+            margin-bottom: 6rem;
+        }
+        .grid{
+            grid-column-gap: 100px;
+        }
     }
-    .steps .grid >div{
-        &:nth-child(1){
-            order: 1;
+    .steps{
+        img{
+            max-width: 370px;
         }
-        &:nth-child(2){
-            order: 0;
-        }
-        &:nth-child(3){
-            order: 2;
-        }
-        &:nth-child(4){
-            order: 3;
-        }
-        &:nth-child(5){
-            order: 5;
-        }
-        &:nth-child(6){
-            order: 4;
-        }
+    }
+    .ebill-img{
+        max-width: 285px;
+    }
+    .download-ebill{
+        padding-top: 1.6rem;
     }
 }
 
+
+
 @media (max-width:$nav-breakpoint-max) {
-    body{
+    body {
         text-align: center;
     }
-    .hero{
-        p{
+    .hero {
+        p {
             max-width: 90vw;
             margin-left: auto;
             margin-right: auto;
         }
     }
-    .hero-img,.steps img{
+    .hero-img,
+    .steps img {
         margin: 0 auto;
     }
     .hero-img {
         max-width: 300px;
     }
-    
-    .luxbar-menu-light{
+    .luxbar-menu-light {
         background-image: linear-gradient(96deg, #0059ff, #08b1fa);
-
     }
-    .main-nav{
-        .container{
+    .main-nav {
+        .container {
             max-width: initial;
         }
     }
-    .download-from{
+    .download-from {
         padding-bottom: 2rem;
+    }
+    .steps{
+        .grid>div {
+            &:nth-child(2) ,&:nth-child(4){
+                margin-bottom: 5rem; 
+            }
+        }
+       h4{
+           font-size: 1.5rem;
+       }
+    }
+    .faq{
+        h4{
+            font-size: 1.5rem;
+        }
+        
+        .grid{
+            div + div{
+                margin-top: 2rem;
+            }
+        }
     }
 }

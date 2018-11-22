@@ -245,19 +245,63 @@ body {
     font-size: .9rem;
     margin-bottom: 3rem; }
 
+.download-ebill {
+  background-image: url(../img/download-ebill-bg.svg); }
+
 .hero-img {
   padding-top: 3rem; }
 
+.ebill-img {
+  max-width: 200px;
+  margin-bottom: 2rem; }
+
 .faq {
-  color: #a1aeb7; }
+  padding: 5rem 0; }
+  .faq .grid {
+    color: #a1aeb7; }
+  .faq h4, .faq h6 {
+    background-image: linear-gradient(96deg, #0059ff, #08b1fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .faq h4 {
+    font-size: 2.26rem;
+    margin-bottom: 3rem; }
+  .faq h6 {
+    margin-bottom: 1rem; }
+  .faq h6, .faq p {
+    font-size: .864rem; }
+  .faq p {
+    line-height: 1.29rem;
+    font-weight: 300; }
+
+.download-from a {
+  display: inline-block; }
 
 .download-from img {
   width: 140px; }
 
 .steps {
-  color: #393939; }
+  padding: 5rem 0; }
+  .steps b {
+    font-size: 3rem;
+    font-weight: 900;
+    background-image: linear-gradient(139deg, #0059ff, #08b1fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
   .steps img {
     max-width: 260px; }
+  .steps h4 {
+    font-weight: 800;
+    font-size: 1.76rem;
+    margin-bottom: .5rem; }
+  .steps p {
+    font-size: .96rem;
+    color: rgba(57, 57, 57, 0.5); }
+
+footer {
+  background-image: linear-gradient(96deg, #0059ff, #08b1fa); }
 
 @media (min-width: 576px) {
   .container {
@@ -267,23 +311,11 @@ body {
   .container {
     max-width: 720px; }
   .hero h1 {
-    font-size: 2.52rem; } }
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px; }
-  .hero-img {
-    width: 32vw;
-    padding-top: 4rem; }
-  .hero p {
-    max-width: 384px;
-    margin-bottom: 4.5rem; }
-  .download-from img {
-    width: 11rem; } }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; } }
+    font-size: 2.52rem; }
+  .download-ebill .grid-hero {
+    padding-bottom: 2rem; }
+  .steps b {
+    font-size: 4rem; } }
 
 @media (min-width: 768px) {
   .grid {
@@ -295,21 +327,65 @@ body {
       text-align: right; }
   .img-div {
     order: 1; }
-  .faq {
+  .faq .grid {
     align-items: start;
     grid-row-gap: 1em; }
-  .steps .grid > div:nth-child(1) {
-    order: 1; }
-  .steps .grid > div:nth-child(2) {
-    order: 0; }
-  .steps .grid > div:nth-child(3) {
-    order: 2; }
-  .steps .grid > div:nth-child(4) {
-    order: 3; }
-  .steps .grid > div:nth-child(5) {
-    order: 5; }
-  .steps .grid > div:nth-child(6) {
-    order: 4; } }
+  .steps {
+    padding-top: 8rem; }
+    .steps .grid > div:nth-child(1) {
+      order: 1;
+      text-align: right; }
+    .steps .grid > div:nth-child(2) {
+      order: 0; }
+    .steps .grid > div:nth-child(3) {
+      order: 2; }
+    .steps .grid > div:nth-child(4) {
+      order: 3;
+      margin-left: auto; }
+    .steps .grid > div:nth-child(5) {
+      order: 5;
+      text-align: right; }
+    .steps .grid > div:nth-child(6) {
+      order: 4; }
+    .steps h4, .steps p {
+      max-width: 300px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; }
+  .container2 {
+    max-width: 770px; }
+  .faq {
+    max-width: 840px; }
+    .faq .grid {
+      grid-gap: 2em; }
+  .hero-img {
+    width: 32vw;
+    padding-top: 4rem; }
+  .hero p {
+    max-width: 384px;
+    margin-bottom: 4.5rem; }
+  .download-from img {
+    width: 11rem; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1100px; }
+  .container2 {
+    max-width: 770px; }
+  .faq {
+    max-width: 900px;
+    padding: 9rem 0; }
+    .faq h4 {
+      margin-bottom: 6rem; }
+    .faq .grid {
+      grid-column-gap: 100px; }
+  .steps img {
+    max-width: 370px; }
+  .ebill-img {
+    max-width: 285px; }
+  .download-ebill {
+    padding-top: 1.6rem; } }
 
 @media (max-width: 767px) {
   body {
@@ -318,7 +394,8 @@ body {
     max-width: 90vw;
     margin-left: auto;
     margin-right: auto; }
-  .hero-img, .steps img {
+  .hero-img,
+  .steps img {
     margin: 0 auto; }
   .hero-img {
     max-width: 300px; }
@@ -327,6 +404,14 @@ body {
   .main-nav .container {
     max-width: initial; }
   .download-from {
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .steps .grid > div:nth-child(2), .steps .grid > div:nth-child(4) {
+    margin-bottom: 5rem; }
+  .steps h4 {
+    font-size: 1.5rem; }
+  .faq h4 {
+    font-size: 1.5rem; }
+  .faq .grid div + div {
+    margin-top: 2rem; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -57,41 +57,41 @@ body {
 
 .faq {
     padding: 5rem 0;
-    .grid{
+    .grid {
         color: #a1aeb7;
     }
-    h4,h6{
+    h4,
+    h6 {
         background-image: linear-gradient(96deg, #0059ff, #08b1fa);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    h4{
+    h4 {
         font-size: 2.26rem;
         margin-bottom: 3rem;
     }
-    h6{
+    h6 {
         margin-bottom: 1rem;
     }
-    h6,p{
+    h6,
+    p {
         font-size: .864rem;
     }
-    p{
+    p {
         line-height: 1.29rem;
         font-weight: $light-font-weight;
     }
 }
 
 .download-from {
-    a{
+    a {
         display: inline-block;
     }
     img {
         width: 140px;
     }
 }
-
-
 
 .steps {
     padding: 5rem 0;
@@ -106,23 +106,59 @@ body {
     img {
         max-width: 260px;
     }
-    h4{
+    h4 {
         font-weight: $heavy-font-weight;
         font-size: 1.76rem;
         margin-bottom: .5rem;
     }
-    p{
+    p {
         font-size: .96rem;
-        
         color: rgba(#393939, .5);
     }
 }
 
-
-footer{
+.footer {
     background-image: linear-gradient(96deg, #0059ff, #08b1fa);
+    .download-from {
+        padding-bottom: 0;
+        img {
+            width: 105px;
+        }
+    }
+    .seperator{
+        height: 1px;
+        background-color: #c2d1d9;
+    }
+    
 }
 
+.ebill-logo-footer {
+    max-width: 51px;
+    margin: 1rem 0; 
+}
+
+
+
+.copyright{
+    li{
+        display: inline-block;
+        img{
+            max-width: 9px;
+            max-height: 9px;
+        }
+        .twitter{
+            max-width: 14px;
+            max-height: 14px;
+        }
+        + li{
+            margin-left: 12px;
+        }
+    }
+    p{
+        color: #fff;
+        font-size: .56rem;
+    }
+}
 
 //media queries
 @media (min-width: 576px) {
@@ -143,12 +179,13 @@ footer{
             padding-bottom: 2rem;
         }
     }
-    .steps{
-        b{
+    .steps {
+        b {
             font-size: 4rem;
         }
     }
 }
+
 @media (min-width:$nav-breakpoint) {
     .grid {
         display: grid;
@@ -163,7 +200,7 @@ footer{
         order: 1;
     }
     .faq {
-        .grid{
+        .grid {
             align-items: start;
             grid-row-gap: 1em;
         }
@@ -193,10 +230,23 @@ footer{
                 order: 4;
             }
         }
-        h4,p{
+        h4,
+        p {
             max-width: 300px;
         }
-
+    }
+    .footer{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .download-from{
+            padding-top: 2rem;
+        }
+    }
+    .copyright{
+        height: 24px;
     }
 }
 
@@ -207,14 +257,12 @@ footer{
     .container2 {
         max-width: 770px;
     }
-    .faq{
+    .faq {
         max-width: 840px;
-        .grid{
-            
+        .grid {
             grid-gap: 2em;
         }
     }
-
     .hero-img {
         width: 32vw;
         padding-top: 4rem;
@@ -239,30 +287,33 @@ footer{
     .container2 {
         max-width: 770px;
     }
-    .faq{
+    .faq {
         max-width: 900px;
         padding: 9rem 0;
-        h4{
+        h4 {
             margin-bottom: 6rem;
         }
-        .grid{
+        .grid {
             grid-column-gap: 100px;
         }
     }
-    .steps{
-        img{
+    .steps {
+        img {
             max-width: 370px;
         }
     }
-    .ebill-img{
+    .ebill-img {
         max-width: 285px;
     }
-    .download-ebill{
+    .download-ebill {
         padding-top: 1.6rem;
     }
+    .footer{
+        .download-from{
+            padding: 2.5rem 0 .6rem;
+        }
+    }
 }
-
-
 
 @media (max-width:$nav-breakpoint-max) {
     body {
@@ -293,25 +344,28 @@ footer{
     .download-from {
         padding-bottom: 2rem;
     }
-    .steps{
+    .steps {
         .grid>div {
-            &:nth-child(2) ,&:nth-child(4){
-                margin-bottom: 5rem; 
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-bottom: 5rem;
             }
         }
-       h4{
-           font-size: 1.5rem;
-       }
-    }
-    .faq{
-        h4{
+        h4 {
             font-size: 1.5rem;
         }
-        
-        .grid{
-            div + div{
+    }
+    .faq {
+        h4 {
+            font-size: 1.5rem;
+        }
+        .grid {
+            div+div {
                 margin-top: 2rem;
             }
         }
+    }
+    .copyright{
+        padding: 10px 0;
     }
 }

@@ -21,6 +21,18 @@ body {
     top: 0;
     width: 100%;
     background-color: rgba(#fff, .14);
+    .container{
+        max-width: 94vw;
+    }
+}
+
+.become-biller{
+    a{
+        margin-top: 16px;
+        padding: 5px 20px;
+        border: 1px solid;
+        display: inline-block;
+    }
 }
 
 .container {
@@ -277,6 +289,11 @@ body {
         img {
             width: 11rem;
         }
+    }
+    .luxbar-item:not(.become-biller) a {
+        padding-left:  38px;
+        padding-right:  38px;
+        
     }
 }
 

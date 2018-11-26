@@ -103,11 +103,11 @@ img {
   height: 58px;
   font-size: .72rem; }
   .luxbar-item a {
-    padding: 22px 38px;
+    padding: 22px 32px;
     display: block; }
 
 .luxbar-hamburger {
-  padding: 22px 38px;
+  padding: 22px 32px;
   position: relative;
   cursor: pointer; }
   .luxbar-hamburger span::before, .luxbar-hamburger span::after {
@@ -230,6 +230,14 @@ body {
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.14); }
+  .main-nav .container {
+    max-width: 94vw; }
+
+.become-biller a {
+  margin-top: 16px;
+  padding: 5px 20px;
+  border: 1px solid;
+  display: inline-block; }
 
 .container {
   max-width: 90vw;
@@ -404,7 +412,10 @@ body {
     max-width: 384px;
     margin-bottom: 4.5rem; }
   .download-from img {
-    width: 11rem; } }
+    width: 11rem; }
+  .luxbar-item:not(.become-biller) a {
+    padding-left: 38px;
+    padding-right: 38px; } }
 
 @media (min-width: 1200px) {
   .container {

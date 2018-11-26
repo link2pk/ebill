@@ -77,8 +77,9 @@ img {
   margin-left: auto; }
 
 .luxbar-brand {
-  font-size: 1.6em;
-  padding: 22px 38px; }
+  font-size: 1.6em; }
+  .luxbar-brand .ebill-logo-footer {
+    margin-top: 1.3rem; }
 
 .luxbar-menu {
   min-height: 58px;
@@ -453,6 +454,8 @@ body {
   .faq .grid div + div {
     margin-top: 2rem; }
   .copyright {
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  .luxbar-brand .ebill-logo-footer {
+    margin-left: 2rem; } }
 
 /*# sourceMappingURL=app.css.map */

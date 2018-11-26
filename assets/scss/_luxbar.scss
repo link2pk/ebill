@@ -63,7 +63,10 @@ $luxbar-shadow: none;
 
 .luxbar-brand {
     font-size: 1.6em;
-    padding: $luxbar-padding;
+    //padding: $luxbar-padding;
+   .ebill-logo-footer{
+       margin-top: 1.3rem;
+   }
 }
 
 .luxbar-menu {

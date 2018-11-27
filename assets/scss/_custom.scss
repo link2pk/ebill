@@ -1,3 +1,4 @@
+
 body {
     font-family: $font-family-avenir;
 }
@@ -10,6 +11,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 .grid-hero {
     padding-top: 4.5rem;
@@ -171,6 +174,24 @@ body {
         font-size: .56rem;
     }
 }
+
+.biller-form{
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px 0 40px;
+    border-radius: 3px;
+    label{
+        color: #000;
+    }
+    &:before{
+        clear: both;
+  content: "";
+  display: table;
+  
+  height: 0;
+    }
+}
+
 
 //media queries
 @media (min-width: 576px) {
@@ -390,5 +411,8 @@ body {
     }
     .luxbar-brand .ebill-logo-footer {
         margin-left: 2rem;
+    }
+    .form-grid-hero{
+        padding: 7rem 0 2rem;
     }
 }

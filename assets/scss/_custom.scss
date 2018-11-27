@@ -192,6 +192,9 @@ body {
     }
 }
 
+textarea{
+    resize: none;
+}
 
 //media queries
 @media (min-width: 576px) {

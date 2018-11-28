@@ -1,7 +1,13 @@
 
+html,body{
+    height: 100%;
+}
+
 body {
     font-family: $font-family-avenir;
 }
+
+
 
 .text-center {
     text-align: center;
@@ -287,6 +293,13 @@ textarea{
     .copyright{
         height: 24px;
     }
+    .biller{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        .hero > .container, .form-grid-hero{
+            height: 100%;
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -418,4 +431,6 @@ textarea{
     .form-grid-hero{
         padding: 7rem 0 2rem;
     }
+    
+
 }

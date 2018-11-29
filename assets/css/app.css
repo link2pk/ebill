@@ -386,7 +386,8 @@ body {
   .footer .download-from {
     padding-top: 2rem; }
   .copyright {
-    height: 24px; } }
+    height: 24px;
+    padding-top: 3px; } }
 
 @media (min-width: 992px) {
   .container {

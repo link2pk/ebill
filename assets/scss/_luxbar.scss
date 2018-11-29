@@ -1,6 +1,7 @@
 $luxbar-height: 58px;
 $luxbar-padding: 22px 38px;
-$luxbar-transition: .6s ease;
+//$luxbar-transition: .3s ease;
+$luxbar-transition: none;
 $hamburger-line-height: 2px;
 $hamburger-width: 26px;
 //$luxbar-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -94,7 +95,7 @@ $luxbar-shadow: none;
 
 .luxbar-item {
     height: $luxbar-height;
-    font-size: .72rem;
+    font-size: .85rem;
     a {
         padding: $luxbar-padding;
         display: block;

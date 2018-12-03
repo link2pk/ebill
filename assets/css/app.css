@@ -2872,7 +2872,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   height: 2px;
   width: 26px;
-  transition: 0.6s ease; }
+  transition: none; }
 
 .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
   background-color: transparent; }
@@ -2899,7 +2899,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .luxbar-menu {
   min-height: 58px;
-  transition: 0.6s ease;
+  transition: none;
   width: 100%; }
 
 .luxbar-navigation {
@@ -2917,13 +2917,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .luxbar-item {
   height: 58px;
-  font-size: .72rem; }
+  font-size: .85rem; }
   .luxbar-item a {
-    padding: 22px 32px;
+    padding: 22px 38px;
     display: block; }
 
 .luxbar-hamburger {
-  padding: 22px 32px;
+  padding: 22px 38px;
   position: relative;
   cursor: pointer; }
   .luxbar-hamburger span::before, .luxbar-hamburger span::after {
@@ -2940,7 +2940,7 @@ a.text-dark:hover, a.text-dark:focus {
     overflow: hidden;
     height: 58px; }
   .luxbar-checkbox:checked ~ .luxbar-menu {
-    transition: height 0.6s ease;
+    transition: height none;
     height: 100vh;
     overflow: auto; }
 
@@ -3135,29 +3135,29 @@ body {
   .footer .download-from {
     padding-bottom: 0; }
     .footer .download-from img {
-      width: 105px; }
+      width: 120px; }
   .footer .seperator {
     height: 1px;
     background-color: #c2d1d9; }
 
 .ebill-logo-footer {
-  max-width: 51px;
+  max-width: 70px;
   margin: 1rem 0; }
 
 .copyright li {
   display: inline-block; }
   .copyright li img {
-    max-width: 9px;
-    max-height: 9px; }
+    max-width: 13px;
+    max-height: 13px; }
   .copyright li .twitter {
-    max-width: 14px;
-    max-height: 14px; }
+    max-width: 18px;
+    max-height: 18px; }
   .copyright li + li {
     margin-left: 12px; }
 
 .copyright p {
   color: #fff;
-  font-size: .56rem; }
+  font-size: .7rem; }
 
 .biller-form {
   background-color: #fff;
@@ -3231,7 +3231,8 @@ textarea {
   .footer .download-from {
     padding-top: 2rem; }
   .copyright {
-    height: 24px; }
+    height: 24px;
+    padding-top: 3px; }
   .biller {
     display: grid;
     grid-template-rows: 1fr auto; }
@@ -3308,6 +3309,8 @@ textarea {
     margin-top: 2rem; }
   .copyright {
     padding: 10px 0; }
+    .copyright p {
+      margin-bottom: 6px; }
   .luxbar-brand .ebill-logo-footer {
     margin-left: 2rem; }
   .form-grid-hero {

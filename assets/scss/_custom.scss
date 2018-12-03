@@ -143,7 +143,7 @@ body {
     .download-from {
         padding-bottom: 0;
         img {
-            width: 105px;
+            width: 120px;
         }
     }
     .seperator{
@@ -154,7 +154,7 @@ body {
 }
 
 .ebill-logo-footer {
-    max-width: 51px;
+    max-width: 70px;
     margin: 1rem 0; 
 }
 
@@ -164,12 +164,12 @@ body {
     li{
         display: inline-block;
         img{
-            max-width: 9px;
-            max-height: 9px;
+            max-width: 13px;
+            max-height: 13px;
         }
         .twitter{
-            max-width: 14px;
-            max-height: 14px;
+            max-width: 18px;
+            max-height: 18px;
         }
         + li{
             margin-left: 12px;
@@ -177,7 +177,8 @@ body {
     }
     p{
         color: #fff;
-        font-size: .56rem;
+        font-size: .7rem;
+        
     }
 }
 
@@ -292,6 +293,7 @@ textarea{
     }
     .copyright{
         height: 24px;
+        padding-top: 3px;
     }
     .biller{
         display: grid;
@@ -424,6 +426,9 @@ textarea{
     }
     .copyright{
         padding: 10px 0;
+        p{
+            margin-bottom: 6px;
+        }
     }
     .luxbar-brand .ebill-logo-footer {
         margin-left: 2rem;

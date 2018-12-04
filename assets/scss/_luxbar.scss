@@ -288,16 +288,26 @@ $light-fg: #fff;
             @extend %bg-and-fg-light;
         }
     }
-
+    .become-biller{
+        font-weight: $medium-font-weight;
+    }
     .active {
         background-color: $light-hl;
         font-weight: 900;
+        a{
+            color: #fff;
+        }
     }
+    
 
     .luxbar-item {
-        &:not(.active){
+        //&:not(.active){
             color: rgba(#fff,.65);
+        //}
+        .become-biller{
+            color: #fff;
         }
+        
         &:hover {
             background-color: $light-hl;
         }

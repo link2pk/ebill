@@ -37,11 +37,17 @@ body {
 
 .become-biller{
     a{
+        
         margin-top: 15px;
-        padding: 5px 20px;
+        padding: 6px 20px 4px;
         border: 1px solid rgba(#fff, .34);
         display: inline-block;
         border-radius: 3px;
+    }
+    &:hover{
+       a{
+        border-color: #fff;
+       } 
     }
 }
 
@@ -334,11 +340,7 @@ textarea{
             width: 11rem;
         }
     }
-    .luxbar-item:not(.become-biller) a {
-        padding-left:  38px;
-        padding-right:  38px;
-        
-    }
+    
 }
 
 @media (min-width: 1200px) {
@@ -374,6 +376,30 @@ textarea{
             padding: 2.5rem 0 .6rem;
         }
     }
+    .luxbar-item:not(.become-biller) a {
+        padding-left:  38px;
+        padding-right:  38px;
+        
+    }
+    .become-biller{
+        margin-left: 18px;
+    }
+}
+
+@media (max-width:1199px) {
+    .main-nav {
+        text-align: center;
+        .container {
+            max-width: initial;
+        }
+    }
+    .luxbar-menu-light {
+        background-image: linear-gradient(96deg, #0059ff, #08b1fa);
+    }
+    .luxbar-brand .ebill-logo-footer {
+        margin-left: 2rem;
+    }
+    
 }
 
 @media (max-width:$nav-breakpoint-max) {
@@ -394,14 +420,8 @@ textarea{
     .hero-img {
         max-width: 300px;
     }
-    .luxbar-menu-light {
-        background-image: linear-gradient(96deg, #0059ff, #08b1fa);
-    }
-    .main-nav {
-        .container {
-            max-width: initial;
-        }
-    }
+    
+    
     .download-from {
         padding-bottom: 2rem;
     }
@@ -435,11 +455,10 @@ textarea{
     .ebill-logo-footer {
         max-width: 80px;
     }
-    .luxbar-brand .ebill-logo-footer {
-        margin-left: 2rem;
-    }
+    
     .form-grid-hero{
         padding: 7rem 0 2rem;
     }
 
 }
+

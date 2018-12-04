@@ -2926,11 +2926,11 @@ a.text-dark:hover, a.text-dark:focus {
   height: 58px;
   font-size: .85rem; }
   .luxbar-item a {
-    padding: 22px 38px;
+    padding: 22px 38px 20px;
     display: block; }
 
 .luxbar-hamburger {
-  padding: 22px 38px;
+  padding: 22px 38px 20px;
   position: relative;
   cursor: pointer; }
   .luxbar-hamburger span::before, .luxbar-hamburger span::after {
@@ -2981,7 +2981,7 @@ a.text-dark:hover, a.text-dark:focus {
         line-height: 29px;
         padding: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .luxbar-navigation {
     flex-flow: row;
     justify-content: flex-end; }
@@ -3031,10 +3031,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .luxbar-menu-light .luxbar-item {
   color: rgba(255, 255, 255, 0.65); }
+  .luxbar-menu-light .luxbar-item a {
+    transition: color .3s ease,border-color .3s ease; }
   .luxbar-menu-light .luxbar-item .become-biller {
     color: #fff; }
   .luxbar-menu-light .luxbar-item:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #fff; }
 
 .luxbar-menu-light .luxbar-hamburger span {
   background-color: #fff; }
@@ -3068,10 +3071,13 @@ body {
 
 .become-biller a {
   margin-top: 15px;
-  padding: 5px 20px;
+  padding: 6px 20px 4px;
   border: 1px solid rgba(255, 255, 255, 0.34);
   display: inline-block;
   border-radius: 3px; }
+
+.become-biller:hover a {
+  border-color: #fff; }
 
 .container {
   max-width: 90vw;
@@ -3270,10 +3276,7 @@ textarea {
     max-width: 384px;
     margin-bottom: 4.5rem; }
   .download-from img {
-    width: 11rem; }
-  .luxbar-item:not(.become-biller) a {
-    padding-left: 38px;
-    padding-right: 38px; } }
+    width: 11rem; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -3294,7 +3297,22 @@ textarea {
   .download-ebill {
     padding-top: 1.6rem; }
   .footer .download-from {
-    padding: 2.5rem 0 .6rem; } }
+    padding: 2.5rem 0 .6rem; }
+  .luxbar-item:not(.become-biller) a {
+    padding-left: 38px;
+    padding-right: 38px; }
+  .become-biller {
+    margin-left: 18px; } }
+
+@media (max-width: 1199px) {
+  .main-nav {
+    text-align: center; }
+    .main-nav .container {
+      max-width: initial; }
+  .luxbar-menu-light {
+    background-image: linear-gradient(96deg, #0059ff, #08b1fa); }
+  .luxbar-brand .ebill-logo-footer {
+    margin-left: 2rem; } }
 
 @media (max-width: 767px) {
   body {
@@ -3308,10 +3326,6 @@ textarea {
     margin: 0 auto; }
   .hero-img {
     max-width: 300px; }
-  .luxbar-menu-light {
-    background-image: linear-gradient(96deg, #0059ff, #08b1fa); }
-  .main-nav .container {
-    max-width: initial; }
   .download-from {
     padding-bottom: 2rem; }
   .steps .grid > div:nth-child(2), .steps .grid > div:nth-child(4) {
@@ -3328,8 +3342,6 @@ textarea {
       margin-bottom: 6px; }
   .ebill-logo-footer {
     max-width: 80px; }
-  .luxbar-brand .ebill-logo-footer {
-    margin-left: 2rem; }
   .form-grid-hero {
     padding: 7rem 0 2rem; } }
 

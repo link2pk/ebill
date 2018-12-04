@@ -315,7 +315,7 @@ body {
     background-color: #c2d1d9; }
 
 .ebill-logo-footer {
-  max-width: 100px;
+  max-width: 90px;
   margin: 1rem 0; }
 
 .copyright li {
@@ -459,6 +459,8 @@ body {
     padding: 10px 0; }
     .copyright p {
       margin-bottom: 6px; }
+  .ebill-logo-footer {
+    max-width: 80px; }
   .luxbar-brand .ebill-logo-footer {
     margin-left: 2rem; } }
 

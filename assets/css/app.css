@@ -3183,7 +3183,8 @@ body {
   font-size: .9rem; }
 
 .form-control {
-  font-size: .96rem; }
+  font-size: .96rem;
+  font-family: "Avenir LT Std"; }
 
 /* .btn-shadow {
 	position: relative;

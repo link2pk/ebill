@@ -3308,6 +3308,8 @@ textarea {
   .hero p {
     max-width: 384px;
     margin-bottom: 4.5rem; }
+  .biller .hero p {
+    max-width: 440px; }
   .download-from img {
     width: 11rem; }
   .biller-text {

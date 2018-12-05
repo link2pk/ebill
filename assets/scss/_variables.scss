@@ -6,7 +6,15 @@ $nav-breakpoint-max: 768px - 1px;
 
 //$border-width:                1px !default;
 //$border-color:                $gray-300 !default;
+$input-border-color: rgba(#c5cacc, .62);
+$input-color: #393939;
+$input-placeholder-color: rgba($input-color,.5);
 
+$btn-border-width: 0;
 $border-radius:               3px;
 $border-radius-lg:            3px;
 //$border-radius-sm:            .2rem !default;
+$form-group-margin-bottom: 1.3rem;
+//$input-padding-y : .7rem;
+//$input-padding-x : ;
+$input-height: 2.8rem;
